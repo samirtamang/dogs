@@ -1,215 +1,100 @@
 <html>
-    <head>
-        <title>Akamaru Pet House</title>
-        <style>
-            .item1 { 
-                    color:whitesmoke;
-                    grid-area: header;
-                     background-color:#474645 ;
-                     font-size: 50px;
-                     height: 550px;
-                     padding-left: 60px;
-                     background-image: url(dog1.jpg);
-                     background-repeat: no-repeat;
-                     background-size: cover;
-                     }
-              .samir{
-                font-size: 30px;
-                color: white;
-              }
-            /* inside item2 start*/
-            .item2 {
-                    
-                    height: 50px;
-                    display: grid;
-                    text-align: center;
-                    grid-area: top ;
-                    grid-gap: 10px;
-                    grid-template-areas:'top1 top2 top3 top4' ;
-                }
-                     .top1{
-                            grid-area: top1;
-                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-                     }
-                     .top2 {
-                            grid-area: top2;
-                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-                     }
-                     .top3 {
-                            grid-area: top3;
-                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-                     }
-                     .top4 {
-                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-                            grid-area: top4;
-                     }
 
-            .item3 {
-                     text-align: center;
-                     grid-area: menu; 
-                     background-color:#474645;
-                     width: 300px;                     
-                     }
-                     /* item4 */
-            .item4 {
-                    color: white;
-                    text-align: center;
-                     grid-area: main; 
-                     background-color:#474645;  
-                                     
-                     }
+<head>
+  <title>Akamaru Pet House</title>
+  <link rel="stylesheet" href="./dog.css">
+</head>
 
-            .column {
-                    float: left;
-                    width: 300px;
-                    margin-bottom: 16px;
-                    padding: 0 8px;
-                    height: 300px;
-                    width: 300px;
-                    display: block;
-                  }
+<body>
+  <div class="cont">
+    <div class="item1">
+      <h1>Akamaru<br>Pet House</h1><br>
+      <div class="name">
+        <p>By Samir Tamang</p>
+      </div>
+    </div>
+    <div class="item2">
+      <div class="top1"><button> Home</button></div>
+      <div class="top2 "><button>Menu</button></div>
+      <div class="top3 "><a href="./login.html"><button>Login</button></a></div>
+      <div class="top4"><button>More</button></div>
+    </div>
 
-            .card {
-                    background-color: #786f5f;
-                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                  }
+    <div class="item3"></div>
 
-            .container {
-                    padding: 0 16px;
-                  }
 
-            .button {
-                    border: none;
-                    outline: 0;
-                    display: inline-block;
-                    padding: 8px;
-                    color: white;
-                    background-color: #000;
-                    text-align: center;
-                    cursor: pointer;
-                    width: 100%;
-                  }
-                 
-                     /* item4 ends */
-            .item5 {
-                    text-align: center;
-                    grid-area: footer; 
-                    background-color: #474645;
-                     color: white;
-                    font-size: 40px;
-                    }
-            .cont { 
-                    height: 500px;
-                    display:grid;
-                    grid-gap: 5px;
-                    grid-template-areas: 
-                         'header header header header'
-                         'header header header header'
-                         'top top top top '                        
-                         'menu main main main'
-                         'menu main main main'
-                         'menu main main main'
-                         'menu main main main'
-                         'menu footer footer footer';
-                    }
-                    img{
-                      height: 170px;
-                      width: 150px;
-                    }
-                    .button1{
-                      height: 100%;
-                      width: 100%;
-                      background-color: #474645;
-                      font-size: 25px;
-                    }
-                  .name{
-                      padding-bottom: 500px;
-                      font-size: 20px;
-                    
-                    }
-
-        </style>
-    </head>
-    <body>
-        <div class="cont">
-            <div class="item1"><h1>Akamaru<br>Pet House</h1><br><div class="name"><p>By Samir Tamang</p></div></div>
-            <div class="item2">
-                <div class="top1"><button class="button1"> Home</button></div>
-                <div class="top2"><button class="button1">Menu</button></div>
-                <div class="top3"><button class="button1">Login</button></div>
-                <div class="top4"><button class="button1">More</button></div>
-            </div>
-            <div class="item3">sidebar</div>
-            <div class="item4"> 
-                <h2>Dog available</h2>
-                <div class="row">
-                  <div class="column">
-                    <div class="card">
-                      <img src="./img/" alt="japanese-spitz" style="width:100%">
-                      <div class="container">
-                        <h2>Japanese-spitz</h2>
-                        <p class="title"></p>
-                        <p><a href="https://en.wikipedia.org/wiki/Japanese_Spitz"> <button class="button">Details</button></a></p>
-                    </div>
-                  </div>
-                </div> 
-
-                <div class="column">
-                  <div class="card">
-                    <img src="./img/German-Shepherd.jpg" alt="German-Shepherd" style="width:100%">
-                    <div class="container">
-                      <h2>German-Shepherd</h2>
-                      <p class="title"></p>
-                      <p><a href="https://en.wikipedia.org/wiki/German_Shepherd"><button class="button">Details</button></a></p>
-                  </div>
-                </div>
-                </div>
-
-                <div class="column">
-                  <div class="card">
-                    <img src="./img/pomeranian.jpg" alt="pomeranian" style="width:100%">
-                    <div class="container">
-                      <h2>Pomeranian</h2>
-                      <p class="title"></p>
-                      <p><a href="https://en.wikipedia.org/wiki/Pomeranian_dog"><button class="button">Details</button></a></p>
-                  </div>
-                </div>
-                </div>
-
-                <div class="column">
-                  <div class="card">
-                    <img src="./img/Labrador Retriever.jpeg" alt="Labrador Retriever" style="width:100%">
-                    <div class="container">
-                      <h2>Labrador Retriever</h2>
-                      <p class="title"></p>
-                      <p><a href="https://en.wikipedia.org/wiki/Labrador_Retriever"><button class="button">Details</button></a></p>
-                  </div>
-                </div>
-                </div>
-                <div class="column">
-                  <div class="card">
-                    <img src="./img/Bulldog.jpg" alt="Bulldog" style="width:100%">
-                    <div class="container">
-                      <h2>Bulldog</h2>
-                      <p class="title"></p>
-                      <p><a href="https://en.wikipedia.org/wiki/Bulldog"><button class="button">Details</button></a></p>
-                  </div>
-                </div>
-                </div>
-
-                  <div class="column">
-                    <div class="card">
-                      <img src="./img/Tibetan-Mastiff.jpg" alt="Tibetan-Mastiff" style="width:100%">
-                      <div class="container">
-                        <h2>Tibetan-Mastiff</h2>
-                        <p class="title"></p>
-                        <p><a href="https://en.wikipedia.org/wiki/Tibetan_Mastiff"><button class="button">Details</button></a></p>
-                      </div>
-                    </div>
-                  </div>
+    <div class="item4">
+      <h2>Dog available</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="./img/japanese-spitz.webp" alt="japanese-spitz" style="width:100%">
+            <div class="container">
+              <h2>Japanese-spitz</h2>
+              <p class="title"></p>
+              <p><a href="https://en.wikipedia.org/wiki/Japanese_Spitz"> <button class="button">Details</button></a></p>
             </div>
           </div>
-            <div class="item5">- Thank You for Visiting -</div>
-            </div>      
-    </body>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./img/German-Shepherd.jpg" alt="German-Shepherd" style="width:100%">
+            <div class="container">
+              <h2>German-Shepherd</h2>
+              <p class="title"></p>
+              <p><a href="https://en.wikipedia.org/wiki/German_Shepherd"><button class="button">Details</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./img/pomeranian.jpg" alt="pomeranian" style="width:100%">
+            <div class="container">
+              <h2>Pomeranian</h2>
+              <p class="title"></p>
+              <p><a href="https://en.wikipedia.org/wiki/Pomeranian_dog"><button class="button">Details</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./img/Labrador Retriever.jpeg" alt="Labrador Retriever" style="width:100%">
+            <div class="container">
+              <h2>Labrador Retriever</h2>
+              <p class="title"></p>
+              <p><a href="https://en.wikipedia.org/wiki/Labrador_Retriever"><button class="button">Details</button></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="./img/Bulldog.jpg" alt="Bulldog" style="width:100%">
+            <div class="container">
+              <h2>Bulldog</h2>
+              <p class="title"></p>
+              <p><a href="https://en.wikipedia.org/wiki/Bulldog"><button class="button">Details</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./img/Tibetan-Mastiff.jpg" alt="Tibetan-Mastiff" style="width:100%">
+            <div class="container">
+              <h2>Tibetan-Mastiff</h2>
+              <p class="title"></p>
+              <p><a href="https://en.wikipedia.org/wiki/Tibetan_Mastiff"><button class="button">Details</button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item5">- Thank You for Visiting -</div>
+  </div>
+</body>
+
 </html>
